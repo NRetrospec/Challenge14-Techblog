@@ -11,7 +11,7 @@ router.post('/', withAuth, async (req, res) => {
 
     res.status(200).json(newProject);
   } catch (err) {
-    res.status(400).json(err);
+    res.status(400).json({ message: 'An error occurred while creating the project.' });
   }
 });
 
@@ -25,13 +25,13 @@ router.delete('/:id', withAuth, async (req, res) => {
     });
 
     if (!projectData) {
-      res.status(404).json({ message: 'No project found with this id!' });
+      res.status(404).json({ message: 'No project found with this ID.' });
       return;
     }
 
     res.status(200).json(projectData);
   } catch (err) {
-    res.status(500).json(err);
+    res.status(500).json({ message: 'An error occurred while updating the project.' });
   }
 });
 

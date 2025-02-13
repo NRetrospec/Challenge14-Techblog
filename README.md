@@ -1,7 +1,7 @@
-# Crowd Funding
+# Tech Blog 
 
 ## Description
-Crowd Funding is a web application that allows users to create and fund projects. Users can log in, create new projects, and view existing projects.
+ Users can log in, create new projects, and view existing projects.
 
 ## Features
 - User authentication (login/signup)
@@ -15,7 +15,7 @@ Crowd Funding is a web application that allows users to create and fund projects
    ```
 2. Navigate to the project directory:
    ```bash
-   cd crowd-funding
+   cd tech-blog
    ```
 3. Install dependencies:
    ```bash
